@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Digi Marketing Agency for performance marketing, social media management, and lead generation services. Book a free strategy call or send us a message.">
+    <title>Contact Us | Digi Marketing Agency</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./js/tailwind.config.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="font-sans antialiased bg-white dark:bg-gray-900 transition-colors duration-300">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white dark:bg-gray-900 shadow-md">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-green-700 dark:text-green-500">Digi Marketing</a>
+            
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-gray-800 dark:text-white hover:text-green-700 dark:hover:text-green-500 font-medium">Home</a>
+                <a href="about.html" class="text-gray-800 dark:text-white hover:text-green-700 dark:hover:text-green-500 font-medium">About</a>
+                <a href="services.html" class="text-gray-800 dark:text-white hover:text-green-700 dark:hover:text-green-500 font-medium">Services</a>
+                <a href="case-studies.html" class="text-gray-800 dark:text-white hover:text-green-700 dark:hover:text-green-500 font-medium">Case Studies</a>
+                <a href="contact.html" class="text-green-700 dark:text-green-500 font-medium">Contact</a>
+            </div>
+            
+            <div class="flex items-center space-x-4">
+                <!-- Theme Toggle Button -->
+                <button id="theme-toggle" class="p-2 rounded-full text-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700">
+                    <svg id="theme-toggle-dark-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                    </svg>
+                    <svg id="theme-toggle-light-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+                
+                <!-- CTA Button -->
+                <a href="contact.html" class="hidden md:block bg-green-700 hover:bg-green-800 text-white px-6 py-2 rounded-full font-medium transition duration-300">Get Started</a>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="md:hidden text-gray-800 dark:text-white hover:text-green-700 dark:hover:text-green-500">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-gray-900 shadow-md">
+            <div class="container mx-auto px-4 py-4 space-y-3">
+                <a href="index.html" class="block text-gray-800 dark:text-white hover:text-green-700 dark:hover:text-green-500 font-medium">Home</a>
+                <a href="about.html" class="block text-gray-800 dark:text-white hover:text-green-700 dark:hover:text-green-500 font-medium">About</a>
+                <a href="services.html" class="block text-gray-800 dark:text-white hover:text-green-700 dark:hover:text-green-500 font-medium">Services</a>
+                <a href="case-studies.html" class="block text-gray-800 dark:text-white hover:text-green-700 dark:hover:text-green-500 font-medium">Case Studies</a>
+                <a href="contact.html" class="block text-green-700 dark:text-green-500 font-medium">Contact</a>
+                <a href="contact.html" class="block bg-green-700 hover:bg-green-800 text-white px-6 py-2 rounded-full font-medium transition duration-300 text-center">Get Started</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="py-20 bg-gray-50 dark:bg-gray-800">
+            <div class="container mx-auto px-4">
+                <div class="max-w-3xl mx-auto text-center">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">Let's Grow Your Business Together</h1>
+                    <p class="text-xl text-gray-600 dark:text-gray-300 mb-8">Ready to take your digital marketing to the next level? Reach out to our team of experts today.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Information -->
+        <section class="py-16 bg-white dark:bg-gray-900">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <!-- Contact Form -->
+                    <div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-xl shadow-lg">
+                        <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Send Us a Message</h2>
+                        <form id="contact-form" class="space-y-6">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="name" class="block text-gray-700 dark:text-gray-300 mb-2">Full Name *</label>
+                                    <input type="text" id="name" name="name" required class="w-full px-4 py-3 rounded-lg bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-green-500">
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-gray-700 dark:text-gray-300 mb-2">Email Address *</label>
+                                    <input type="email" id="email" name="email" required class="w-full px-4 py-3 rounded-lg bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-green-500">
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <label for="business-type" class="block text-gray-700 dark:text-gray-300 mb-2">Business Type *</label>
+                                <select id="business-type" name="business-type" required class="w-full px-4 py-3 rounded-lg bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-green-500">
+                                    <option value="" disabled selected>Select your business type</option>
+                                    <option value="e-commerce">E-Commerce</option>
+                                    <option value="local-business">Local Business</option>
+                                    <option value="saas">SaaS / Tech</option>
+                                    <option value="healthcare">Healthcare</option>
+                                    <option value="education">Education</option>
+                                    <option value="real-estate">Real Estate</option>
+                                    <option value="professional-services">Professional Services</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label for="service-needed" class="block text-gray-700 dark:text-gray-300 mb-2">What You Need Help With *</label>
+                                <select id="service-needed" name="service-needed" required class="w-full px-4 py-3 rounded-lg bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-green-500">
+                                    <option value="" disabled selected>Select a service</option>
+                                    <option value="performance-marketing">Performance Marketing (Meta/Google Ads)</option>
+                                    <option value="social-media">Social Media Management</option>
+                                    <option value="funnel-automation">Funnel Building & Automation</option>
+                                    <option value="seo-content">SEO & Content Marketing</option>
+                                    <option value="website-ecommerce">Website & E-Commerce Setup</option>
+                                    <option value="full-service">Full-Service Digital Marketing</option>
+                                    <option value="not-sure">Not Sure / Need Consultation</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label for="message" class="block text-gray-700 dark:text-gray-300 mb-2">Your Message *</label>
+                                <textarea id="message" name="message" rows="5" required class="w-full px-4 py-3 rounded-lg bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-green-500"></textarea>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <input type="checkbox" id="consent" name="consent" required class="mt-1 mr-3">
+                                <label for="consent" class="text-sm text-gray-600 dark:text-gray-400">I consent to having this website store my submitted information so they can respond to my inquiry. *</label>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-green-700 hover:bg-green-800 text-white font-medium py-3 px-6 rounded-lg transition duration-300">Send Message</button>
+                        </form>
+                    </div>
+                    
+                    <!-- Contact Information -->
+                    <div>
+                        <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Get in Touch</h2>
+                        
+                        <div class="space-y-8">
+                            <div class="flex items-start">
+                                <div class="bg-green-100 dark:bg-green-900 p-3 rounded-full mr-4">
+                                    <i class="fas fa-map-marker-alt text-green-700 dark:text-green-500"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-medium text-gray-900 dark:text-white mb-1">Our Location</h3>
+                                    <p class="text-gray-600 dark:text-gray-400">123 Marketing St, Digital City, DC 12345</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-green-100 dark:bg-green-900 p-3 rounded-full mr-4">
+                                    <i class="fas fa-phone-alt text-green-700 dark:text-green-500"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-medium text-gray-900 dark:text-white mb-1">Phone Number</h3>
+                                    <p class="text-gray-600 dark:text-gray-400">+1 (123) 456-7890</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-green-100 dark:bg-green-900 p-3 rounded-full mr-4">
+                                    <i class="fas fa-envelope text-green-700 dark:text-green-500"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-medium text-gray-900 dark:text-white mb-1">Email Address</h3>
+                                    <p class="text-gray-600 dark:text-gray-400">info@digimarketing.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-green-100 dark:bg-green-900 p-3 rounded-full mr-4">
+                                    <i class="fas fa-clock text-green-700 dark:text-green-500"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-medium text-gray-900 dark:text-white mb-1">Business Hours</h3>
+                                    <p class="text-gray-600 dark:text-gray-400">Monday - Friday: 9:00 AM - 6:00 PM</p>
+                                    <p class="text-gray-600 dark:text-gray-400">Saturday: 10:00 AM - 2:00 PM</p>
+                                    <p class="text-gray-600 dark:text-gray-400">Sunday: Closed</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-12">
+                            <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Connect With Us</h3>
+                            <div class="flex space-x-4">
+                                <a href="#" class="bg-gray-200 dark:bg-gray-700 hover:bg-green-700 hover:text-white dark:hover:bg-green-700 text-gray-700 dark:text-white p-3 rounded-full transition duration-300">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="bg-gray-200 dark:bg-gray-700 hover:bg-green-700 hover:text-white dark:hover:bg-green-700 text-gray-700 dark:text-white p-3 rounded-full transition duration-300">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="bg-gray-200 dark:bg-gray-700 hover:bg-green-700 hover:text-white dark:hover:bg-green-700 text-gray-700 dark:text-white p-3 rounded-full transition duration-300">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="bg-gray-200 dark:bg-gray-700 hover:bg-green-700 hover:text-white dark:hover:bg-green-700 text-gray-700 dark:text-white p-3 rounded-full transition duration-300">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-12">
+                            <a href="https://wa.me/1234567890" target="_blank" class="flex items-center justify-center bg-green-600 hover:bg-green-700 text-white py-4 px-6 rounded-lg transition duration-300">
+                                <i class="fab fa-whatsapp text-2xl mr-3"></i>
+                                <span class="font-medium">Chat with Us on WhatsApp</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="py-16 bg-gray-50 dark:bg-gray-800">
+            <div class="container mx-auto px-4">
+                <div class="max-w-3xl mx-auto text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Find Us</h2>
+                    <p class="text-xl text-gray-600 dark:text-gray-400">Visit our office or schedule a meeting</p>
+                </div>
+                
+                <div class="bg-white dark:bg-gray-900 rounded-xl overflow-hidden shadow-lg h-96">
+                    <!-- Placeholder for map (in a real project, you would integrate Google Maps or another map service) -->
+                    <div class="w-full h-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center">
+                        <p class="text-gray-500 dark:text-gray-400 text-lg">Map Integration Would Go Here</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="py-16 bg-white dark:bg-gray-900">
+            <div class="container mx-auto px-4">
+                <div class="max-w-3xl mx-auto text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Frequently Asked Questions</h2>
+                    <p class="text-xl text-gray-600 dark:text-gray-400">Find answers to common questions about our services</p>
+                </div>
+                
+                <div class="max-w-3xl mx-auto space-y-6">
+                    <!-- FAQ Item 1 -->
+                    <div class="faq-item bg-gray-50 dark:bg-gray-800 rounded-lg overflow-hidden">
+                        <button class="faq-question w-full flex items-center justify-between p-6 text-left focus:outline-none">
+                            <span class="text-lg font-medium text-gray-900 dark:text-white">How quickly can you start working on my project?</span>
+                            <svg class="faq-arrow w-5 h-5 text-gray-500 dark:text-gray-400 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6 text-gray-600 dark:text-gray-400">
+                            <p>We can typically begin work within 3-5 business days after finalizing the contract and receiving any required access or materials. For urgent projects, we offer expedited onboarding for an additional fee.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 2 -->
+                    <div class="faq-item bg-gray-50 dark:bg-gray-800 rounded-lg overflow-hidden">
+                        <button class="faq-question w-full flex items-center justify-between p-6 text-left focus:outline-none">
+                            <span class="text-lg font-medium text-gray-900 dark:text-white">What is your minimum contract length?</span>
+                            <svg class="faq-arrow w-5 h-5 text-gray-500 dark:text-gray-400 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6 text-gray-600 dark:text-gray-400">
+                            <p>Our standard contracts are for 3 months, which allows enough time to implement strategies and see meaningful results. We also offer month-to-month options for certain services with a slightly higher rate to account for the shorter commitment.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 3 -->
+                    <div class="faq-item bg-gray-50 dark:bg-gray-800 rounded-lg overflow-hidden">
+                        <button class="faq-question w-full flex items-center justify-between p-6 text-left focus:outline-none">
+                            <span class="text-lg font-medium text-gray-900 dark:text-white">How do you measure and report results?</span>
+                            <svg class="faq-arrow w-5 h-5 text-gray-500 dark:text-gray-400 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6 text-gray-600 dark:text-gray-400">
+                            <p>We provide comprehensive monthly reports that track all relevant KPIs for your campaigns, including ROI, ROAS, conversion rates, traffic metrics, and more. Additionally, we set up real-time dashboards that you can access anytime, and schedule bi-weekly check-in calls to discuss performance and strategy adjustments.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 4 -->
+                    <div class="faq-item bg-gray-50 dark:bg-gray-800 rounded-lg overflow-hidden">
+                        <button class="faq-question w-full flex items-center justify-between p-6 text-left focus:outline-none">
+                            <span class="text-lg font-medium text-gray-900 dark:text-white">Do you work with businesses outside your location?</span>
+                            <svg class="faq-arrow w-5 h-5 text-gray-500 dark:text-gray-400 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6 text-gray-600 dark:text-gray-400">
+                            <p>Yes, we work with clients globally! Our team is set up to collaborate remotely with businesses of all sizes, regardless of location. We use various digital tools to ensure smooth communication and project management across different time zones.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 5 -->
+                    <div class="faq-item bg-gray-50 dark:bg-gray-800 rounded-lg overflow-hidden">
+                        <button class="faq-question w-full flex items-center justify-between p-6 text-left focus:outline-none">
+                            <span class="text-lg font-medium text-gray-900 dark:text-white">What makes your agency different from others?</span>
+                            <svg class="faq-arrow w-5 h-5 text-gray-500 dark:text-gray-400 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6 text-gray-600 dark:text-gray-400">
+                            <p>Our agency stands out through our results-focused approach, transparent reporting, and integrated strategy that combines paid advertising with automation and conversion optimization. We don't just drive traffic – we build complete marketing systems that convert visitors into customers and nurture them into loyal advocates for your brand.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-20 bg-green-700 dark:bg-green-800">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl font-bold text-white mb-6">Ready to Transform Your Digital Marketing?</h2>
+                <p class="text-xl text-green-100 mb-8 max-w-3xl mx-auto">Book your free strategy call today and discover how we can help you achieve your business goals.</p>
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#contact-form" class="bg-white text-green-700 hover:bg-gray-100 px-8 py-3 rounded-full font-medium transition duration-300">Get Started Now</a>
+                    <a href="https://wa.me/1234567890" target="_blank" class="bg-transparent text-white border border-white hover:bg-green-800 px-8 py-3 rounded-full font-medium transition duration-300 flex items-center justify-center sm:inline-flex">
+                        <i class="fab fa-whatsapp mr-2 text-lg"></i> WhatsApp Us
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-green-500">Digi Marketing</h3>
+                    <p class="text-gray-400 mb-4">Results-driven digital marketing agency specializing in performance marketing, social media management, and lead generation.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition duration-300">About</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">Services</a></li>
+                        <li><a href="case-studies.html" class="text-gray-400 hover:text-white transition duration-300">Case Studies</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Services -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Our Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">Performance Marketing</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">Social Media Management</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">Funnel Building & Automation</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">SEO & Content Marketing</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">Website & E-Commerce Setup</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Contact Us</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-green-500"></i>
+                            <span class="text-gray-400">123 Marketing St, Digital City, DC 12345</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3 text-green-500"></i>
+                            <span class="text-gray-400">+1 (123) 456-7890</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-green-500"></i>
+                            <span class="text-gray-400">info@digimarketing.com</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-clock mr-3 text-green-500"></i>
+                            <span class="text-gray-400">Mon-Fri: 9AM - 6PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr class="border-gray-800 my-8">
+            
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">&copy; 2023 Digi Marketing. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition duration-300">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition duration-300">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition duration-300">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/1234567890" target="_blank" class="fixed bottom-6 right-6 bg-green-600 text-white p-4 rounded-full shadow-lg hover:bg-green-700 transition duration-300 z-50">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="./js/main.js"></script>
+</body>
+</html>

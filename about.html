@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Digi Marketing Agency - our story, values, team, and mission to help businesses grow through performance marketing.">
+    <title>About Us | Digi Marketing Agency</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./js/tailwind.config.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="font-sans antialiased bg-white dark:bg-gray-900 transition-colors duration-300">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white dark:bg-gray-900 shadow-md">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-green-700 dark:text-green-500">Digi Marketing</a>
+            
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-gray-800 dark:text-white hover:text-green-700 dark:hover:text-green-500 font-medium">Home</a>
+                <a href="about.html" class="text-green-700 dark:text-green-500 font-medium">About</a>
+                <a href="services.html" class="text-gray-800 dark:text-white hover:text-green-700 dark:hover:text-green-500 font-medium">Services</a>
+                <a href="case-studies.html" class="text-gray-800 dark:text-white hover:text-green-700 dark:hover:text-green-500 font-medium">Case Studies</a>
+                <a href="contact.html" class="text-gray-800 dark:text-white hover:text-green-700 dark:hover:text-green-500 font-medium">Contact</a>
+            </div>
+            
+            <div class="flex items-center space-x-4">
+                <!-- Theme Toggle Button -->
+                <button id="theme-toggle" class="p-2 rounded-full text-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700">
+                    <svg id="theme-toggle-dark-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                    </svg>
+                    <svg id="theme-toggle-light-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+                
+                <!-- CTA Button -->
+                <a href="contact.html" class="hidden md:block bg-green-700 hover:bg-green-800 text-white px-6 py-2 rounded-full font-medium transition duration-300">Get Started</a>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="md:hidden text-gray-800 dark:text-white hover:text-green-700 dark:hover:text-green-500">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-gray-900 shadow-md">
+            <div class="container mx-auto px-4 py-4 space-y-3">
+                <a href="index.html" class="block text-gray-800 dark:text-white hover:text-green-700 dark:hover:text-green-500 font-medium">Home</a>
+                <a href="about.html" class="block text-green-700 dark:text-green-500 font-medium">About</a>
+                <a href="services.html" class="block text-gray-800 dark:text-white hover:text-green-700 dark:hover:text-green-500 font-medium">Services</a>
+                <a href="case-studies.html" class="block text-gray-800 dark:text-white hover:text-green-700 dark:hover:text-green-500 font-medium">Case Studies</a>
+                <a href="contact.html" class="block text-gray-800 dark:text-white hover:text-green-700 dark:hover:text-green-500 font-medium">Contact</a>
+                <a href="contact.html" class="block bg-green-700 hover:bg-green-800 text-white px-6 py-2 rounded-full font-medium transition duration-300 text-center">Get Started</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="py-20 bg-gray-50 dark:bg-gray-800">
+            <div class="container mx-auto px-4">
+                <div class="max-w-3xl mx-auto text-center">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">About Digi Marketing</h1>
+                    <p class="text-xl text-gray-600 dark:text-gray-300 mb-8">We're a team of digital marketing experts passionate about helping businesses grow through innovative strategies and data-driven decisions.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Who We Are Section -->
+        <section class="py-16 bg-white dark:bg-gray-900">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2 mb-10 md:mb-0">
+                        <img src="./images/about-image.svg" alt="Digi Marketing Team" class="w-full h-auto rounded-lg shadow-xl">
+                    </div>
+                    <div class="md:w-1/2 md:pl-12">
+                        <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-6">Who We Are</h2>
+                        <p class="text-lg text-gray-600 dark:text-gray-400 mb-6">Founded in 2018, Digi Marketing Agency was born out of a simple observation: most businesses struggle to navigate the complex digital landscape effectively.</p>
+                        <p class="text-lg text-gray-600 dark:text-gray-400 mb-6">Our founder, after years of working with both startups and established companies, realized that there was a gap between what businesses needed and what traditional agencies offered. Too many agencies focused on vanity metrics rather than real business results.</p>
+                        <p class="text-lg text-gray-600 dark:text-gray-400 mb-6">That's why we built Digi Marketing with a different approach - one that prioritizes measurable outcomes, transparent reporting, and strategies tailored to each client's unique goals.</p>
+                        <p class="text-lg text-gray-600 dark:text-gray-400">Today, we're proud to have helped over 100 businesses across various industries achieve significant growth through our performance-focused digital marketing services.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Mission -->
+        <section class="py-16 bg-gray-50 dark:bg-gray-800">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-6">Our Mission</h2>
+                <p class="text-xl text-gray-600 dark:text-gray-400 max-w-4xl mx-auto">To empower businesses with digital marketing strategies that deliver measurable results, foster sustainable growth, and build lasting customer relationships.</p>
+            </div>
+        </section>
+
+        <!-- Our Values -->
+        <section class="py-16 bg-white dark:bg-gray-900">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Our Values</h2>
+                    <p class="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">The principles that guide everything we do</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Value 1 -->
+                    <div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-lg shadow-md text-center">
+                        <div class="text-green-700 dark:text-green-500 mb-4 inline-block p-4 bg-green-100 dark:bg-green-900 rounded-full">
+                            <i class="fas fa-chart-line text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Performance</h3>
+                        <p class="text-gray-600 dark:text-gray-400">We're obsessed with results. Every strategy we implement is designed to maximize ROI and drive measurable business growth.</p>
+                    </div>
+                    
+                    <!-- Value 2 -->
+                    <div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-lg shadow-md text-center">
+                        <div class="text-green-700 dark:text-green-500 mb-4 inline-block p-4 bg-green-100 dark:bg-green-900 rounded-full">
+                            <i class="fas fa-glasses text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Transparency</h3>
+                        <p class="text-gray-600 dark:text-gray-400">We believe in complete honesty with our clients. You'll always know exactly what we're doing and the results we're achieving.</p>
+                    </div>
+                    
+                    <!-- Value 3 -->
+                    <div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-lg shadow-md text-center">
+                        <div class="text-green-700 dark:text-green-500 mb-4 inline-block p-4 bg-green-100 dark:bg-green-900 rounded-full">
+                            <i class="fas fa-lightbulb text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Innovation</h3>
+                        <p class="text-gray-600 dark:text-gray-400">The digital landscape evolves rapidly. We stay ahead of trends and continuously refine our approaches to deliver cutting-edge solutions.</p>
+                    </div>
+                    
+                    <!-- Value 4 -->
+                    <div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-lg shadow-md text-center">
+                        <div class="text-green-700 dark:text-green-500 mb-4 inline-block p-4 bg-green-100 dark:bg-green-900 rounded-full">
+                            <i class="fas fa-handshake text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Client Success</h3>
+                        <p class="text-gray-600 dark:text-gray-400">Your success is our success. We view ourselves as partners in your growth journey, not just service providers.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Meet the Team -->
+        <section class="py-16 bg-gray-50 dark:bg-gray-800">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Meet Our Team</h2>
+                    <p class="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">The talented individuals behind our successful campaigns</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Team Member 1 -->
+                    <div class="bg-white dark:bg-gray-900 rounded-lg shadow-md overflow-hidden">
+                        <div class="h-64 bg-gray-300 dark:bg-gray-700"></div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Alex Johnson</h3>
+                            <p class="text-green-700 dark:text-green-500 mb-4">Founder & CEO</p>
+                            <p class="text-gray-600 dark:text-gray-400 mb-4">With over 15 years of experience in digital marketing, Alex has helped numerous businesses achieve exponential growth through innovative strategies.</p>
+                            <div class="flex space-x-3">
+                                <a href="#" class="text-gray-600 dark:text-gray-400 hover:text-green-700 dark:hover:text-green-500">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="text-gray-600 dark:text-gray-400 hover:text-green-700 dark:hover:text-green-500">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Team Member 2 -->
+                    <div class="bg-white dark:bg-gray-900 rounded-lg shadow-md overflow-hidden">
+                        <div class="h-64 bg-gray-300 dark:bg-gray-700"></div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Sarah Martinez</h3>
+                            <p class="text-green-700 dark:text-green-500 mb-4">Performance Marketing Director</p>
+                            <p class="text-gray-600 dark:text-gray-400 mb-4">Sarah is a certified Meta and Google Ads expert who specializes in creating high-converting ad campaigns that maximize ROI for our clients.</p>
+                            <div class="flex space-x-3">
+                                <a href="#" class="text-gray-600 dark:text-gray-400 hover:text-green-700 dark:hover:text-green-500">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="text-gray-600 dark:text-gray-400 hover:text-green-700 dark:hover:text-green-500">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Team Member 3 -->
+                    <div class="bg-white dark:bg-gray-900 rounded-lg shadow-md overflow-hidden">
+                        <div class="h-64 bg-gray-300 dark:bg-gray-700"></div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">David Chen</h3>
+                            <p class="text-green-700 dark:text-green-500 mb-4">Head of Technology & Automation</p>
+                            <p class="text-gray-600 dark:text-gray-400 mb-4">David leads our technical team, developing custom automation solutions and marketing funnels that streamline client operations.</p>
+                            <div class="flex space-x-3">
+                                <a href="#" class="text-gray-600 dark:text-gray-400 hover:text-green-700 dark:hover:text-green-500">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="text-gray-600 dark:text-gray-400 hover:text-green-700 dark:hover:text-green-500">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications & Partnerships -->
+        <section class="py-16 bg-white dark:bg-gray-900">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Our Certifications & Partnerships</h2>
+                    <p class="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">We're proud to be recognized by industry leaders</p>
+                </div>
+                
+                <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16">
+                    <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow-md">
+                        <img src="./images/meta-partner.svg" alt="Meta Business Partner" class="h-16">
+                    </div>
+                    <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow-md">
+                        <img src="./images/google-partner.svg" alt="Google Partner" class="h-16">
+                    </div>
+                    <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow-md">
+                        <img src="./images/hubspot-partner.svg" alt="HubSpot Partner" class="h-16">
+                    </div>
+                    <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow-md">
+                        <img src="./images/shopify-partner.svg" alt="Shopify Partner" class="h-16">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-20 bg-green-700 dark:bg-green-800">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl font-bold text-white mb-6">Ready to Work With Us?</h2>
+                <p class="text-xl text-green-100 mb-8 max-w-3xl mx-auto">Let's discuss how we can help your business achieve its digital marketing goals.</p>
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="contact.html" class="bg-white text-green-700 hover:bg-gray-100 px-8 py-3 rounded-full font-medium transition duration-300">Contact Us Today</a>
+                    <a href="https://wa.me/1234567890" target="_blank" class="bg-transparent text-white border border-white hover:bg-green-800 px-8 py-3 rounded-full font-medium transition duration-300 flex items-center justify-center sm:inline-flex">
+                        <i class="fab fa-whatsapp mr-2 text-lg"></i> WhatsApp Us
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-green-500">Digi Marketing</h3>
+                    <p class="text-gray-400 mb-4">Results-driven digital marketing agency specializing in performance marketing, social media management, and lead generation.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition duration-300">About</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">Services</a></li>
+                        <li><a href="case-studies.html" class="text-gray-400 hover:text-white transition duration-300">Case Studies</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Services -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Our Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">Performance Marketing</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">Social Media Management</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">Funnel Building & Automation</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">SEO & Content Marketing</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">Website & E-Commerce Setup</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Contact Us</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-green-500"></i>
+                            <span class="text-gray-400">123 Marketing St, Digital City, DC 12345</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3 text-green-500"></i>
+                            <span class="text-gray-400">+1 (123) 456-7890</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-green-500"></i>
+                            <span class="text-gray-400">info@digimarketing.com</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-clock mr-3 text-green-500"></i>
+                            <span class="text-gray-400">Mon-Fri: 9AM - 6PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr class="border-gray-800 my-8">
+            
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">&copy; 2023 Digi Marketing. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition duration-300">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition duration-300">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition duration-300">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/1234567890" target="_blank" class="fixed bottom-6 right-6 bg-green-600 text-white p-4 rounded-full shadow-lg hover:bg-green-700 transition duration-300 z-50">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="./js/main.js"></script>
+</body>
+</html>

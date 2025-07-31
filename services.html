@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Digi Marketing Agency's comprehensive services including performance marketing, social media management, funnel building, SEO, and website development.">
+    <title>Our Services | Digi Marketing Agency</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./js/tailwind.config.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="font-sans antialiased bg-white dark:bg-gray-900 transition-colors duration-300">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white dark:bg-gray-900 shadow-md">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-green-700 dark:text-green-500">Digi Marketing</a>
+            
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-gray-800 dark:text-white hover:text-green-700 dark:hover:text-green-500 font-medium">Home</a>
+                <a href="about.html" class="text-gray-800 dark:text-white hover:text-green-700 dark:hover:text-green-500 font-medium">About</a>
+                <a href="services.html" class="text-green-700 dark:text-green-500 font-medium">Services</a>
+                <a href="case-studies.html" class="text-gray-800 dark:text-white hover:text-green-700 dark:hover:text-green-500 font-medium">Case Studies</a>
+                <a href="contact.html" class="text-gray-800 dark:text-white hover:text-green-700 dark:hover:text-green-500 font-medium">Contact</a>
+            </div>
+            
+            <div class="flex items-center space-x-4">
+                <!-- Theme Toggle Button -->
+                <button id="theme-toggle" class="p-2 rounded-full text-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700">
+                    <svg id="theme-toggle-dark-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                    </svg>
+                    <svg id="theme-toggle-light-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+                
+                <!-- CTA Button -->
+                <a href="contact.html" class="hidden md:block bg-green-700 hover:bg-green-800 text-white px-6 py-2 rounded-full font-medium transition duration-300">Get Started</a>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="md:hidden text-gray-800 dark:text-white hover:text-green-700 dark:hover:text-green-500">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-gray-900 shadow-md">
+            <div class="container mx-auto px-4 py-4 space-y-3">
+                <a href="index.html" class="block text-gray-800 dark:text-white hover:text-green-700 dark:hover:text-green-500 font-medium">Home</a>
+                <a href="about.html" class="block text-gray-800 dark:text-white hover:text-green-700 dark:hover:text-green-500 font-medium">About</a>
+                <a href="services.html" class="block text-green-700 dark:text-green-500 font-medium">Services</a>
+                <a href="case-studies.html" class="block text-gray-800 dark:text-white hover:text-green-700 dark:hover:text-green-500 font-medium">Case Studies</a>
+                <a href="contact.html" class="block text-gray-800 dark:text-white hover:text-green-700 dark:hover:text-green-500 font-medium">Contact</a>
+                <a href="contact.html" class="block bg-green-700 hover:bg-green-800 text-white px-6 py-2 rounded-full font-medium transition duration-300 text-center">Get Started</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="py-20 bg-gray-50 dark:bg-gray-800">
+            <div class="container mx-auto px-4">
+                <div class="max-w-3xl mx-auto text-center">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">Our Services</h1>
+                    <p class="text-xl text-gray-600 dark:text-gray-300 mb-8">Comprehensive digital marketing solutions tailored to your business goals and target audience.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Overview -->
+        <section class="py-16 bg-white dark:bg-gray-900">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">How We Can Help Your Business</h2>
+                    <p class="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">We offer a full spectrum of digital marketing services to help you attract, engage, and convert your ideal customers.</p>
+                </div>
+                
+                <!-- Service 1: Performance Marketing -->
+                <div class="mb-24">
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 mb-10 md:mb-0 md:pr-12">
+                            <div class="text-green-700 dark:text-green-500 mb-4">
+                                <i class="fas fa-chart-line text-5xl"></i>
+                            </div>
+                            <h3 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Performance Marketing</h3>
+                            <p class="text-lg text-gray-600 dark:text-gray-400 mb-6">Data-driven advertising campaigns focused on measurable results and maximum ROI.</p>
+                            
+                            <div class="space-y-4 mb-8">
+                                <div class="flex items-start">
+                                    <div class="text-green-700 dark:text-green-500 mr-4">
+                                        <i class="fas fa-check-circle text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-gray-900 dark:text-white mb-1">Meta Ads (Facebook & Instagram)</h4>
+                                        <p class="text-gray-600 dark:text-gray-400">Targeted campaigns that reach your ideal customers with compelling creative and strategic placements.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <div class="text-green-700 dark:text-green-500 mr-4">
+                                        <i class="fas fa-check-circle text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-gray-900 dark:text-white mb-1">Google Ads</h4>
+                                        <p class="text-gray-600 dark:text-gray-400">Search, display, and YouTube campaigns that capture high-intent prospects actively looking for your solutions.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <div class="text-green-700 dark:text-green-500 mr-4">
+                                        <i class="fas fa-check-circle text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-gray-900 dark:text-white mb-1">ROI-Focused Ad Funnels</h4>
+                                        <p class="text-gray-600 dark:text-gray-400">Multi-stage advertising strategies that nurture prospects from awareness to conversion with optimized messaging.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <a href="contact.html" class="bg-green-700 hover:bg-green-800 text-white px-8 py-3 rounded-full font-medium transition duration-300 inline-block">Get Started</a>
+                        </div>
+                        <div class="md:w-1/2">
+                            <img src="./images/performance-marketing.svg" alt="Performance Marketing" class="w-full h-auto rounded-lg shadow-xl">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 2: Social Media Management -->
+                <div class="mb-24">
+                    <div class="flex flex-col md:flex-row-reverse items-center">
+                        <div class="md:w-1/2 mb-10 md:mb-0 md:pl-12">
+                            <div class="text-green-700 dark:text-green-500 mb-4">
+                                <i class="fas fa-hashtag text-5xl"></i>
+                            </div>
+                            <h3 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Social Media Management</h3>
+                            <p class="text-lg text-gray-600 dark:text-gray-400 mb-6">Strategic content creation and community engagement to build your brand presence and connect with your audience.</p>
+                            
+                            <div class="space-y-4 mb-8">
+                                <div class="flex items-start">
+                                    <div class="text-green-700 dark:text-green-500 mr-4">
+                                        <i class="fas fa-check-circle text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-gray-900 dark:text-white mb-1">Content Creation & Curation</h4>
+                                        <p class="text-gray-600 dark:text-gray-400">Eye-catching visuals and compelling copy that resonates with your target audience and reflects your brand voice.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <div class="text-green-700 dark:text-green-500 mr-4">
+                                        <i class="fas fa-check-circle text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-gray-900 dark:text-white mb-1">Community Management</h4>
+                                        <p class="text-gray-600 dark:text-gray-400">Proactive engagement with your followers, responding to comments and messages to build relationships.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <div class="text-green-700 dark:text-green-500 mr-4">
+                                        <i class="fas fa-check-circle text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-gray-900 dark:text-white mb-1">Platform Strategy</h4>
+                                        <p class="text-gray-600 dark:text-gray-400">Tailored approaches for each platform (Instagram, LinkedIn, Twitter, etc.) to maximize engagement and reach.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <a href="contact.html" class="bg-green-700 hover:bg-green-800 text-white px-8 py-3 rounded-full font-medium transition duration-300 inline-block">Get Started</a>
+                        </div>
+                        <div class="md:w-1/2">
+                            <img src="./images/social-media.svg" alt="Social Media Management" class="w-full h-auto rounded-lg shadow-xl">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 3: Funnel Building & Automation -->
+                <div class="mb-24">
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 mb-10 md:mb-0 md:pr-12">
+                            <div class="text-green-700 dark:text-green-500 mb-4">
+                                <i class="fas fa-funnel-dollar text-5xl"></i>
+                            </div>
+                            <h3 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Funnel Building & Automation</h3>
+                            <p class="text-lg text-gray-600 dark:text-gray-400 mb-6">Conversion-optimized customer journeys that turn prospects into loyal customers while saving you time.</p>
+                            
+                            <div class="space-y-4 mb-8">
+                                <div class="flex items-start">
+                                    <div class="text-green-700 dark:text-green-500 mr-4">
+                                        <i class="fas fa-check-circle text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-gray-900 dark:text-white mb-1">WhatsApp Business Automation</h4>
+                                        <p class="text-gray-600 dark:text-gray-400">Automated messaging flows that qualify leads, answer common questions, and guide customers through your sales process.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <div class="text-green-700 dark:text-green-500 mr-4">
+                                        <i class="fas fa-check-circle text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-gray-900 dark:text-white mb-1">Landing Page Development</h4>
+                                        <p class="text-gray-600 dark:text-gray-400">High-converting landing pages designed to capture leads and drive specific actions from your target audience.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <div class="text-green-700 dark:text-green-500 mr-4">
+                                        <i class="fas fa-check-circle text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-gray-900 dark:text-white mb-1">CRM Integration</h4>
+                                        <p class="text-gray-600 dark:text-gray-400">Seamless connection between your marketing channels and CRM to ensure proper lead tracking and follow-up.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <a href="contact.html" class="bg-green-700 hover:bg-green-800 text-white px-8 py-3 rounded-full font-medium transition duration-300 inline-block">Get Started</a>
+                        </div>
+                        <div class="md:w-1/2">
+                            <img src="./images/funnel-automation.svg" alt="Funnel Building & Automation" class="w-full h-auto rounded-lg shadow-xl">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 4: SEO & Content Marketing -->
+                <div class="mb-24">
+                    <div class="flex flex-col md:flex-row-reverse items-center">
+                        <div class="md:w-1/2 mb-10 md:mb-0 md:pl-12">
+                            <div class="text-green-700 dark:text-green-500 mb-4">
+                                <i class="fas fa-search text-5xl"></i>
+                            </div>
+                            <h3 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">SEO & Content Marketing</h3>
+                            <p class="text-lg text-gray-600 dark:text-gray-400 mb-6">Sustainable organic traffic growth through search engine optimization and valuable content creation.</p>
+                            
+                            <div class="space-y-4 mb-8">
+                                <div class="flex items-start">
+                                    <div class="text-green-700 dark:text-green-500 mr-4">
+                                        <i class="fas fa-check-circle text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-gray-900 dark:text-white mb-1">On-Page SEO</h4>
+                                        <p class="text-gray-600 dark:text-gray-400">Technical optimization of your website to improve search engine rankings and user experience.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <div class="text-green-700 dark:text-green-500 mr-4">
+                                        <i class="fas fa-check-circle text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-gray-900 dark:text-white mb-1">Content Strategy</h4>
+                                        <p class="text-gray-600 dark:text-gray-400">Comprehensive content planning that addresses your audience's needs at every stage of the buyer's journey.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <div class="text-green-700 dark:text-green-500 mr-4">
+                                        <i class="fas fa-check-circle text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-gray-900 dark:text-white mb-1">Link Building</h4>
+                                        <p class="text-gray-600 dark:text-gray-400">Strategic acquisition of quality backlinks to boost your domain authority and search visibility.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <a href="contact.html" class="bg-green-700 hover:bg-green-800 text-white px-8 py-3 rounded-full font-medium transition duration-300 inline-block">Get Started</a>
+                        </div>
+                        <div class="md:w-1/2">
+                            <img src="./images/seo-content.svg" alt="SEO & Content Marketing" class="w-full h-auto rounded-lg shadow-xl">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 5: Website & E-Commerce Setup -->
+                <div>
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 mb-10 md:mb-0 md:pr-12">
+                            <div class="text-green-700 dark:text-green-500 mb-4">
+                                <i class="fas fa-laptop-code text-5xl"></i>
+                            </div>
+                            <h3 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Website & E-Commerce Setup</h3>
+                            <p class="text-lg text-gray-600 dark:text-gray-400 mb-6">Professional, conversion-optimized websites and online stores that drive business growth.</p>
+                            
+                            <div class="space-y-4 mb-8">
+                                <div class="flex items-start">
+                                    <div class="text-green-700 dark:text-green-500 mr-4">
+                                        <i class="fas fa-check-circle text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-gray-900 dark:text-white mb-1">WordPress Development</h4>
+                                        <p class="text-gray-600 dark:text-gray-400">Custom WordPress websites designed for your specific business needs and target audience.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <div class="text-green-700 dark:text-green-500 mr-4">
+                                        <i class="fas fa-check-circle text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-gray-900 dark:text-white mb-1">Shopify Store Setup</h4>
+                                        <p class="text-gray-600 dark:text-gray-400">E-commerce stores built on Shopify with optimized product pages, checkout flow, and payment processing.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <div class="text-green-700 dark:text-green-500 mr-4">
+                                        <i class="fas fa-check-circle text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-gray-900 dark:text-white mb-1">Conversion Rate Optimization</h4>
+                                        <p class="text-gray-600 dark:text-gray-400">Data-driven improvements to your existing website to increase leads, sales, and customer engagement.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <a href="contact.html" class="bg-green-700 hover:bg-green-800 text-white px-8 py-3 rounded-full font-medium transition duration-300 inline-block">Get Started</a>
+                        </div>
+                        <div class="md:w-1/2">
+                            <img src="./images/website-ecommerce.svg" alt="Website & E-Commerce Setup" class="w-full h-auto rounded-lg shadow-xl">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Process -->
+        <section class="py-16 bg-gray-50 dark:bg-gray-800">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Our Process</h2>
+                    <p class="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">How we work with you to deliver exceptional results</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Step 1 -->
+                    <div class="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-md relative">
+                        <div class="absolute -top-5 -left-5 w-12 h-12 bg-green-700 text-white rounded-full flex items-center justify-center text-xl font-bold">1</div>
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4 mt-4">Discovery</h3>
+                        <p class="text-gray-600 dark:text-gray-400">We start by understanding your business, goals, target audience, and current marketing efforts to identify opportunities.</p>
+                    </div>
+                    
+                    <!-- Step 2 -->
+                    <div class="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-md relative">
+                        <div class="absolute -top-5 -left-5 w-12 h-12 bg-green-700 text-white rounded-full flex items-center justify-center text-xl font-bold">2</div>
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4 mt-4">Strategy</h3>
+                        <p class="text-gray-600 dark:text-gray-400">We develop a customized marketing plan with specific tactics, channels, messaging, and KPIs aligned with your objectives.</p>
+                    </div>
+                    
+                    <!-- Step 3 -->
+                    <div class="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-md relative">
+                        <div class="absolute -top-5 -left-5 w-12 h-12 bg-green-700 text-white rounded-full flex items-center justify-center text-xl font-bold">3</div>
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4 mt-4">Implementation</h3>
+                        <p class="text-gray-600 dark:text-gray-400">Our team executes the strategy with precision, setting up campaigns, creating content, and building necessary assets.</p>
+                    </div>
+                    
+                    <!-- Step 4 -->
+                    <div class="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-md relative">
+                        <div class="absolute -top-5 -left-5 w-12 h-12 bg-green-700 text-white rounded-full flex items-center justify-center text-xl font-bold">4</div>
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4 mt-4">Optimization</h3>
+                        <p class="text-gray-600 dark:text-gray-400">We continuously monitor performance, analyze data, and make data-driven improvements to maximize your ROI.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing -->
+        <section class="py-16 bg-white dark:bg-gray-900">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Flexible Pricing Options</h2>
+                    <p class="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">We offer customized solutions to fit your business needs and budget</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                    <!-- Basic Plan -->
+                    <div class="bg-gray-50 dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:-translate-y-2">
+                        <div class="p-8">
+                            <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">Starter</h3>
+                            <div class="text-green-700 dark:text-green-500 text-4xl font-bold mb-4">$997<span class="text-gray-600 dark:text-gray-400 text-lg font-normal">/month</span></div>
+                            <p class="text-gray-600 dark:text-gray-400 mb-6">Perfect for small businesses looking to establish their digital presence.</p>
+                            
+                            <ul class="space-y-3 mb-8">
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-700 dark:text-green-500 mr-2"></i>
+                                    <span class="text-gray-600 dark:text-gray-400">1 Marketing Channel</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-700 dark:text-green-500 mr-2"></i>
+                                    <span class="text-gray-600 dark:text-gray-400">Basic Analytics Dashboard</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-700 dark:text-green-500 mr-2"></i>
+                                    <span class="text-gray-600 dark:text-gray-400">Monthly Reporting</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-700 dark:text-green-500 mr-2"></i>
+                                    <span class="text-gray-600 dark:text-gray-400">Email Support</span>
+                                </li>
+                            </ul>
+                            
+                            <a href="contact.html" class="block w-full bg-green-700 hover:bg-green-800 text-white text-center py-3 rounded-full font-medium transition duration-300">Get Started</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Growth Plan -->
+                    <div class="bg-green-700 rounded-lg shadow-xl overflow-hidden transform scale-105 transition-transform duration-300 hover:-translate-y-2">
+                        <div class="absolute top-0 right-0 bg-yellow-400 text-gray-900 text-xs font-bold px-3 py-1 rounded-bl-lg">MOST POPULAR</div>
+                        <div class="p-8">
+                            <h3 class="text-2xl font-bold text-white mb-4">Growth</h3>
+                            <div class="text-white text-4xl font-bold mb-4">$1,997<span class="text-green-200 text-lg font-normal">/month</span></div>
+                            <p class="text-green-100 mb-6">Ideal for growing businesses ready to scale their digital marketing efforts.</p>
+                            
+                            <ul class="space-y-3 mb-8">
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-white mr-2"></i>
+                                    <span class="text-green-100">3 Marketing Channels</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-white mr-2"></i>
+                                    <span class="text-green-100">Advanced Analytics Dashboard</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-white mr-2"></i>
+                                    <span class="text-green-100">Bi-weekly Reporting</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-white mr-2"></i>
+                                    <span class="text-green-100">Priority Email & Phone Support</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-white mr-2"></i>
+                                    <span class="text-green-100">Basic Automation Setup</span>
+                                </li>
+                            </ul>
+                            
+                            <a href="contact.html" class="block w-full bg-white hover:bg-gray-100 text-green-700 text-center py-3 rounded-full font-medium transition duration-300">Get Started</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Premium Plan -->
+                    <div class="bg-gray-50 dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:-translate-y-2">
+                        <div class="p-8">
+                            <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">Premium</h3>
+                            <div class="text-green-700 dark:text-green-500 text-4xl font-bold mb-4">$3,997<span class="text-gray-600 dark:text-gray-400 text-lg font-normal">/month</span></div>
+                            <p class="text-gray-600 dark:text-gray-400 mb-6">Comprehensive solution for established businesses seeking maximum impact.</p>
+                            
+                            <ul class="space-y-3 mb-8">
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-700 dark:text-green-500 mr-2"></i>
+                                    <span class="text-gray-600 dark:text-gray-400">All Marketing Channels</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-700 dark:text-green-500 mr-2"></i>
+                                    <span class="text-gray-600 dark:text-gray-400">Custom Analytics Dashboard</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-700 dark:text-green-500 mr-2"></i>
+                                    <span class="text-gray-600 dark:text-gray-400">Weekly Reporting</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-700 dark:text-green-500 mr-2"></i>
+                                    <span class="text-gray-600 dark:text-gray-400">24/7 Priority Support</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-700 dark:text-green-500 mr-2"></i>
+                                    <span class="text-gray-600 dark:text-gray-400">Advanced Automation & CRM</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-700 dark:text-green-500 mr-2"></i>
+                                    <span class="text-gray-600 dark:text-gray-400">Dedicated Account Manager</span>
+                                </li>
+                            </ul>
+                            
+                            <a href="contact.html" class="block w-full bg-green-700 hover:bg-green-800 text-white text-center py-3 rounded-full font-medium transition duration-300">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-12">
+                    <p class="text-gray-600 dark:text-gray-400 mb-4">Need a custom solution? We offer tailored packages to meet your specific requirements.</p>
+                    <a href="contact.html" class="text-green-700 dark:text-green-500 font-medium hover:text-green-800 dark:hover:text-green-400 inline-flex items-center">
+                        Contact us for a custom quote
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="py-16 bg-gray-50 dark:bg-gray-800">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Frequently Asked Questions</h2>
+                    <p class="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">Answers to common questions about our services</p>
+                </div>
+                
+                <div class="max-w-3xl mx-auto space-y-6">
+                    <!-- FAQ Item 1 -->
+                    <div class="bg-white dark:bg-gray-900 rounded-lg shadow-md overflow-hidden">
+                        <button class="faq-question w-full px-6 py-4 text-left font-bold text-gray-900 dark:text-white flex justify-between items-center">
+                            <span>How long does it take to see results?</span>
+                            <svg class="w-5 h-5 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="faq-answer px-6 py-4 text-gray-600 dark:text-gray-400 border-t border-gray-200 dark:border-gray-700 hidden">
+                            <p>Results timeline varies depending on your industry, competition, and chosen services. For paid advertising, you may see initial results within days. For SEO and content marketing, significant results typically take 3-6 months. We provide regular reports to track progress and make data-driven adjustments to accelerate results.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 2 -->
+                    <div class="bg-white dark:bg-gray-900 rounded-lg shadow-md overflow-hidden">
+                        <button class="faq-question w-full px-6 py-4 text-left font-bold text-gray-900 dark:text-white flex justify-between items-center">
+                            <span>Do I need to sign a long-term contract?</span>
+                            <svg class="w-5 h-5 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="faq-answer px-6 py-4 text-gray-600 dark:text-gray-400 border-t border-gray-200 dark:border-gray-700 hidden">
+                            <p>We offer month-to-month services with a 30-day notice period for cancellation. While we don't require long-term contracts, we find that clients who commit to at least 3-6 months see the best results, as digital marketing is a long-term investment. We earn your business every month through results and transparent communication.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 3 -->
+                    <div class="bg-white dark:bg-gray-900 rounded-lg shadow-md overflow-hidden">
+                        <button class="faq-question w-full px-6 py-4 text-left font-bold text-gray-900 dark:text-white flex justify-between items-center">
+                            <span>How do you measure success?</span>
+                            <svg class="w-5 h-5 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="faq-answer px-6 py-4 text-gray-600 dark:text-gray-400 border-t border-gray-200 dark:border-gray-700 hidden">
+                            <p>We measure success based on your specific business goals, which might include leads generated, sales, ROI, website traffic, engagement metrics, or brand awareness. During our initial consultation, we'll establish clear KPIs aligned with your objectives and provide regular reporting on these metrics through our custom analytics dashboard.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 4 -->
+                    <div class="bg-white dark:bg-gray-900 rounded-lg shadow-md overflow-hidden">
+                        <button class="faq-question w-full px-6 py-4 text-left font-bold text-gray-900 dark:text-white flex justify-between items-center">
+                            <span>What makes you different from other agencies?</span>
+                            <svg class="w-5 h-5 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="faq-answer px-6 py-4 text-gray-600 dark:text-gray-400 border-t border-gray-200 dark:border-gray-700 hidden">
+                            <p>Our key differentiators include: 1) Results-focused approach with clear ROI tracking, 2) Transparent reporting with no hidden metrics, 3) Integrated strategy across multiple channels for maximum impact, 4) Customized solutions tailored to your specific business needs rather than cookie-cutter packages, and 5) Continuous optimization based on data-driven insights.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 5 -->
+                    <div class="bg-white dark:bg-gray-900 rounded-lg shadow-md overflow-hidden">
+                        <button class="faq-question w-full px-6 py-4 text-left font-bold text-gray-900 dark:text-white flex justify-between items-center">
+                            <span>Do you work with businesses in my industry?</span>
+                            <svg class="w-5 h-5 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="faq-answer px-6 py-4 text-gray-600 dark:text-gray-400 border-t border-gray-200 dark:border-gray-700 hidden">
+                            <p>We have experience working with businesses across various industries including e-commerce, professional services, healthcare, education, real estate, and more. Our team takes the time to understand the unique challenges and opportunities in your specific industry. We're happy to share relevant case studies during our consultation call.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-20 bg-green-700 dark:bg-green-800">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl font-bold text-white mb-6">Ready to Grow Your Business?</h2>
+                <p class="text-xl text-green-100 mb-8 max-w-3xl mx-auto">Let's create a customized digital marketing strategy that drives real results for your business.</p>
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="contact.html" class="bg-white text-green-700 hover:bg-gray-100 px-8 py-3 rounded-full font-medium transition duration-300">Book a Free Strategy Call</a>
+                    <a href="https://wa.me/1234567890" target="_blank" class="bg-transparent text-white border border-white hover:bg-green-800 px-8 py-3 rounded-full font-medium transition duration-300 flex items-center justify-center sm:inline-flex">
+                        <i class="fab fa-whatsapp mr-2 text-lg"></i> WhatsApp Us
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-green-500">Digi Marketing</h3>
+                    <p class="text-gray-400 mb-4">Results-driven digital marketing agency specializing in performance marketing, social media management, and lead generation.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition duration-300">About</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">Services</a></li>
+                        <li><a href="case-studies.html" class="text-gray-400 hover:text-white transition duration-300">Case Studies</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Services -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Our Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">Performance Marketing</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">Social Media Management</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">Funnel Building & Automation</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">SEO & Content Marketing</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">Website & E-Commerce Setup</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Contact Us</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-green-500"></i>
+                            <span class="text-gray-400">123 Marketing St, Digital City, DC 12345</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3 text-green-500"></i>
+                            <span class="text-gray-400">+1 (123) 456-7890</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-green-500"></i>
+                            <span class="text-gray-400">info@digimarketing.com</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-clock mr-3 text-green-500"></i>
+                            <span class="text-gray-400">Mon-Fri: 9AM - 6PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr class="border-gray-800 my-8">
+            
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">&copy; 2023 Digi Marketing. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition duration-300">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition duration-300">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition duration-300">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/1234567890" target="_blank" class="fixed bottom-6 right-6 bg-green-600 text-white p-4 rounded-full shadow-lg hover:bg-green-700 transition duration-300 z-50">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="./js/main.js"></script>
+</body>
+</html>
