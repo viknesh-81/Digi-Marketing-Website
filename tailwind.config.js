@@ -61,3 +61,8 @@ tailwind.config = {
     },
     plugins: [],
 };
+
+tailwind.config = {
+    darkMode: 'class',
+    // other configuration
+}
